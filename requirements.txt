@@ -9,7 +9,7 @@ pandas
 pilton==1.0.5
 headlessplot
 
-#dda-queue==e1533452b00b1d77ae61afa2b08a1d2c132d756e
+#dda-queue==6951918c32fddbc412f90a696b8cb13688ed8813
 
 git+git://github.com/volodymyrss/dqueue@1ab8917f00fe10802319fb63c77e2daec5c1b421#egg=dda-queue
 
