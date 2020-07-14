@@ -8,7 +8,7 @@ TAG=$(DOCKER_COMMIT)
 IMAGE="odahub/dda:$(TAG)"
 
 build: 
-	docker build -t $(IMAGE) --build-arg uid=$(USER_ID) --build-arg OSA_VERSION=$(OSA_VERSION) --build-arg CONTAINER_COMMIT=$(DOCKER_COMMIT) .
+	docker build --pull -t $(IMAGE) --build-arg uid=$(USER_ID) --build-arg OSA_VERSION=$(OSA_VERSION) --build-arg CONTAINER_COMMIT=$(DOCKER_COMMIT) .
 	echo "built $(IMAGE)"
 	echo $(TAG) > image-tag
 
