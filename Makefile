@@ -34,3 +34,5 @@ singularity:
 run-worker: build
 	WORKER_MODE=passive DDA_QUEUE="http://in.internal.odahub.io/staging-1-3/dqueue@queue-osa11" sh run.sh $(IMAGE)
 
+singularity:
+	docker run -v /var/run/docker.sock:/var/run/docker.sock -v /dev/shm/singularity/:/output --privileged -t --rm quay.io/singularity/docker2singularity $(IMAGE)
