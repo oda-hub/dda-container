@@ -11,7 +11,7 @@ headlessplot
 
 #dda-queue==40ea7c294600f5b36e3f929b60dc17d76abeaf7d
 
-git+git://github.com/volodymyrss/dqueue@1c64dfc77152a1d59818c81b3bc94fd6474c69a2#egg=dda-queue
+git+git://github.com/volodymyrss/dqueue@c9460cfe01c78dc6270de72fca7e644156db982b#egg=dda-queue
 
 #clone https://github.com/mtorromeo/mattersend.git && cd mattersend && pip install pyfakefs && pip install . 
 
