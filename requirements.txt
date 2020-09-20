@@ -35,4 +35,4 @@ pathlib
 
 bravado
 
-data-analysis==1.1.8
+data-analysis==1.1.9
