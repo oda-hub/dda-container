@@ -15,8 +15,6 @@ git+git://github.com/volodymyrss/dqueue@90963dd7eaff1d0ae77afbcf785347a69f68b835
 
 #clone https://github.com/mtorromeo/mattersend.git && cd mattersend && pip install pyfakefs && pip install . 
 
-#git+git://github.com/volodymyrss/data-analysis@2dd3b55#egg=data-analysis
-
 
 gunicorn
 
@@ -35,4 +33,4 @@ pathlib
 
 bravado
 
-data-analysis==1.1.10
+data-analysis==1.1.11
