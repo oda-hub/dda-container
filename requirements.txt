@@ -9,18 +9,11 @@ pandas
 pilton==1.0.5
 headlessplot
 
-#dda-queue==40ea7c294600f5b36e3f929b60dc17d76abeaf7d
-
 git+git://github.com/volodymyrss/dqueue@8b6e2e8bf2651cd6ebb1f4f94448745381802df6#egg=dda-queue
-
-#clone https://github.com/mtorromeo/mattersend.git && cd mattersend && pip install pyfakefs && pip install . 
-
 
 gunicorn
 
 #git+https://github.com/volodymyrss/dda-ddosadm.git
-#git+https://github.com/volodymyrss/dda-ddosa.git@7c45922 
-#git+https://github.com/volodymyrss/dlogging.git@6df5b37 --upgrade
 
 raven
 mattersend
@@ -33,4 +26,4 @@ pathlib
 
 bravado
 
-data-analysis==1.1.16
+data-analysis==1.1.17
