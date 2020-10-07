@@ -55,7 +55,7 @@ if [ "$WORKER_MODE" == "interface" ]; then
 else
     while true; do
         echo "passive worker starting"
-        DISPLAY="" python -m dataanalysis.caches.queue $DDA_QUEUE 2>&1
+        DISPLAY="" python -m dataanalysis.caches.queue -B 1000 -t 36000 $DDA_QUEUE 2>&1
         echo "worker dead: restarting"
         sleep 1
     done | tee -a /var/log/containers/${CONTAINER_NAME}
