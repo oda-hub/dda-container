@@ -6,6 +6,7 @@ OSA_VERSION?=$(shell curl https://www.isdc.unige.ch/~savchenk/gitlab-ci/integral
 TAG=$(DOCKER_COMMIT)
 #TAG="$(OSA_VERSION)-$(DOCKER_COMMIT)"
 IMAGE="odahub/dda:$(TAG)"
+IMAGE_LATEST="odahub/dda:latest"
 
 build: 
 	docker build --pull -t $(IMAGE) --build-arg uid=$(USER_ID) --build-arg OSA_VERSION=$(OSA_VERSION) --build-arg CONTAINER_COMMIT=$(DOCKER_COMMIT) .
@@ -14,6 +15,8 @@ build:
 
 push: build
 	docker push $(IMAGE)
+	docker tag $(IMAGE) $(IMAGE_LATEST)
+	docker push $(IMAGE_LATEST)
 
 pull:
 	docker pull $(IMAGE)
