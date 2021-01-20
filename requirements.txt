@@ -9,11 +9,9 @@ pandas
 pilton==1.0.5
 headlessplot
 
-git+git://github.com/volodymyrss/dqueue@7b63196c2f9541cf849fb2be0bdb71123edf9983#egg=oda-node
+git+git://github.com/oda-hub/dqueue@7b63196c2f9541cf849fb2be0bdb71123edf9983#egg=oda-node
 
 gunicorn
-
-#git+https://github.com/volodymyrss/dda-ddosadm.git
 
 raven
 mattersend
