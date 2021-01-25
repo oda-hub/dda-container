@@ -9,6 +9,7 @@ IMAGE="odahub/dda:$(TAG)"
 IMAGE_LATEST="odahub/dda:latest"
 
 build: 
+	bash urls.sh
 	docker build --pull -t $(IMAGE) --build-arg uid=$(USER_ID) --build-arg OSA_VERSION=$(OSA_VERSION) --build-arg CONTAINER_COMMIT=$(DOCKER_COMMIT) .
 	echo "built $(IMAGE)"
 	echo $(TAG) > image-tag
