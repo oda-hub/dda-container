@@ -9,6 +9,7 @@ build-docker:
     - apk add git openssh make bash
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
     - docker info
+    - bash urls.sh
     - git submodule update --init
       #    - (cd dda-interface-app/)
   script:
