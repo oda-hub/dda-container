@@ -9,7 +9,7 @@ pandas
 pilton==1.0.5
 headlessplot
 
-git+git://github.com/volodymyrss/dqueue@bb7ea48eee13fb350a0520f74e6ec2b9e6dbac88#egg=oda-node
+git+git://github.com/volodymyrss/dqueue@7a3f601388181f34f378fdd9b5c79169ace0aa2c#egg=oda-node
 
 gunicorn
 
