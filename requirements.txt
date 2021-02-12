@@ -24,6 +24,6 @@ pathlib
 
 bravado
 
-data-analysis>=1.1.38
+data-analysis>=1.1.39
 
 python-shell-colors
