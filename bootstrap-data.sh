@@ -14,4 +14,4 @@ mkdir -pv /data/rep_base_prod/{scw,aux}
 
 mkdir -pv /data/rep_base_prod/aux/adp/ref/
 
-rsync -lrtv isdcarc.unige.ch::arc/FTP/arc_distr/NRT/public/aux/adp/ref/ /data/rep_base_prod/aux/adp/ref/
+rsync -lrtv  --exclude \*txt isdcarc.unige.ch::arc/FTP/arc_distr/NRT/public/aux/adp/ref/ /data/rep_base_prod/aux/adp/ref/
