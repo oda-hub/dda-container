@@ -36,7 +36,7 @@ RUN echo "export CONTAINER_COMMIT=$CONTAINER_COMMIT" >> /init.sh
 
 ADD bootstrap-data.sh /bootstrap-data.sh
 
-RUN . /init.sh; pip install git+https://github.com/volodymyrss/dda-ddosadm.git@72e8fd0
+RUN . /init.sh; pip install git+https://github.com/volodymyrss/dda-ddosadm.git@8b52869
 
 #ADD etc-passwd /etc/passwd
 RUN echo 'oda:x:1000:1000:ODA runner:/tmp/:/bin/bash' >> /etc/passwd
