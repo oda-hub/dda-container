@@ -12,4 +12,4 @@ wget -q -O- https://www.isdc.unige.ch/integral/catalog/43/gnrl_refr_cat_0043.fit
 
 mkdir -pv /data/rep_base_prod/{scw,aux}
 
-rsync -lrtv isdcarc.unige.ch::arc/FTP/arc_distr/NRT/public/aux/adp/org/ /data/rep_base_prod/aux/adp/org/
+rsync -lrtv isdcarc.unige.ch::arc/FTP/arc_distr/NRT/public/aux/adp/ref/ /data/rep_base_prod/aux/adp/ref/
