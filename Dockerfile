@@ -34,5 +34,7 @@ RUN echo "export CONTAINER_COMMIT=$CONTAINER_COMMIT" >> /init.sh
 
 #ENV DDA_QUEUE /data/ddcache/queue
 
+ADD bootstrap-data.sh /bootstrap-data.sh
+
 #ADD etc-passwd /etc/passwd
 RUN echo 'oda:x:1000:1000:ODA runner:/tmp/:/bin/bash' >> /etc/passwd

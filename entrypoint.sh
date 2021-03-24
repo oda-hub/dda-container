@@ -41,6 +41,16 @@ export PFILES="$PWD/pfiles;${PFILES##*;}"
 
 mkdir -pv $PWD/pfiles
 
+##
+
+if [ "${DDA_BOOTSTRAP_DATA:-no}" == "yes" ]; then
+    echo -e '\033[31m requested to bootstrap data \033[0m'
+    bash /bootstrap-data.sh
+fi
+
+##
+
+
 #ln -s /osa  /home/integral/osa
 
 echo "worker mode: $WORKER_MODE"
