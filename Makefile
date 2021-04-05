@@ -1,6 +1,6 @@
 USER_ID?=$(shell id -u)
 DOCKER_COMMIT=$(shell git describe --always)
-OSA_VERSION?=$(shell curl https://www.isdc.unige.ch/~savchenk/gitlab-ci/integral/build/osa-build-tarball/CentOS_7.7.1908_x86_64/latest/latest/osa-version-ref.txt)
+OSA_VERSION?=$(shell curl https://www.isdc.unige.ch/~savchenk/gitlab-ci/integral/build/osa-build-tarball/cross-platform/latest/latest/osa-version-ref.txt)
 #OSA_VERSION_SHORT?=$(shell curl https://www.isdc.unige.ch/~savchenk/gitlab-ci/integral/build/osa-build-tarball/CentOS_7.5.1804_x86_64/latest/latest/osa-version-ref.txt | awk -F- '{print $$1,$$2,$$4}' OFS=-)
 
 TAG=$(DOCKER_COMMIT)
