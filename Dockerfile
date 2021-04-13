@@ -40,3 +40,5 @@ RUN . /init.sh; pip install git+https://github.com/volodymyrss/dda-ddosadm.git@6
 
 #ADD etc-passwd /etc/passwd
 RUN echo 'oda:x:1000:1000:ODA runner:/tmp/:/bin/bash' >> /etc/passwd
+
+ADD worker-knowledge-osa11.0.yaml /worker-knowledge-osa11.0.yaml
