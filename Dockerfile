@@ -1,9 +1,14 @@
 FROM integralsw/osa-python:11.1-3-g87cee807-20200410-144247-refcat-42.0-heasoft-6.26.1-python-3.6.9
 
+
 # also add osa10.2
 
 RUN mkdir -pv /osa10.2 && \
     curl -q https://www.isdc.unige.ch/integral/download/osa/sw/10.2/osa10.2-bin-linux64-CentOS7.tar.gz | tar xzf - -C /opt/
+
+ADD init.sh /init.sh
+
+RUN cat -n /init.sh && source /init.sh && export
 
 RUN cat /init.sh >> /init-osa10.2.sh && \
     echo "export OSA_VERSION=10.2" >> /init-osa10.2.sh && \
