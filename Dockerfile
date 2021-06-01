@@ -48,3 +48,4 @@ RUN echo 'oda:x:1000:1000:ODA runner:/tmp/:/bin/bash' >> /etc/passwd
 
 ADD worker-knowledge-osa11.0.yaml /worker-knowledge-osa11.0.yaml
 ADD worker-knowledge-osa10.2.yaml /worker-knowledge-osa10.2.yaml
+

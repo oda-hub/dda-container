@@ -1,6 +1,10 @@
 #!/bin/bash
 
-export WORKDIR=/scratch/$HOSTNAME/
+export WORKDIR=${SCRATCH_BASE:-}/scratch/$HOSTNAME/
+
+mkdir -pv ${SCRATCH_BASE:-}/scratch/$HOSTNAME/
+mkdir -pv ${SCRATCH_BASE:-}/var/log/containers/
+
 mkdir -pv $WORKDIR/tmp-home
 
 export HOME_OVERRRIDE=$WORKDIR/tmp-home
@@ -61,7 +65,7 @@ if [ "$WORKER_MODE" == "interface" ]; then
         DISPLAY="" gunicorn --workers 4 --timeout 600  --log-level debug -b 0.0.0.0:8000 ddaworker.service:app 2>&1 
         echo "worker dead: restarting"
         sleep 1
-    done | tee -a /var/log/containers/${CONTAINER_NAME}
+    done | tee -a ${SCRATCH_BASE:-}/var/log/containers/${CONTAINER_NAME}
 else
     while true; do
         echo "passive worker starting"
@@ -79,7 +83,7 @@ else
 
         echo "worker dead: restarting"
         sleep 1
-    done | tee -a /var/log/containers/${CONTAINER_NAME}
+    done | tee -a ${SCRATCH_BASE:-}/var/log/containers/${CONTAINER_NAME}
 fi
 
 
