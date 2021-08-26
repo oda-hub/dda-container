@@ -53,4 +53,6 @@ ADD worker-knowledge-osa10.2.yaml /worker-knowledge-osa10.2.yaml
 RUN . /init.sh; pip install --upgrade git+https://github.com/volodymyrss/data-analysis
 RUN . /init.sh; pip install -U numpy
 
-RUN yum install bind-utils
+RUN yum install -y bind-utils
+
+RUN . /init.sh; pip install git+https://github.com/volodymyrss/dda-rangequery
