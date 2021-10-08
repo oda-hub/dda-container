@@ -57,3 +57,6 @@ RUN . /init.sh; pip install -U numpy
 RUN yum install -y bind-utils
 
 RUN . /init.sh; pip install git+https://github.com/volodymyrss/dda-rangequery@staging-1-3
+
+
+RUN . /init.sh; pip install jsonschema\<4.0
