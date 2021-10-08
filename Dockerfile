@@ -1,4 +1,5 @@
-FROM integralsw/osa-python:11.1-16-g88c002b7-20210507-170349-refcat-43.0-heasoft-6.28-python-3.8.2
+#FROM integralsw/osa-python:11.1-16-g88c002b7-20210507-170349-refcat-43.0-heasoft-6.28-python-3.8.2
+FROM integralsw/osa-python:11.1-16-g88c002b7-20210507-170349-refcat-43.0-heasoft-6.25-python-3.8.2
 #FROM integralsw/osa-python:11.1-3-g87cee807-20200410-144247-refcat-42.0-heasoft-6.26.1-python-3.6.9
 
 
