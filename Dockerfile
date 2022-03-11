@@ -51,7 +51,7 @@ RUN echo 'oda:x:1000:1000:ODA runner:/tmp/:/bin/bash' >> /etc/passwd
 ADD worker-knowledge-osa11.0.yaml /worker-knowledge-osa11.0.yaml
 ADD worker-knowledge-osa10.2.yaml /worker-knowledge-osa10.2.yaml
 
-RUN . /init.sh; pip install --upgrade git+https://github.com/volodymyrss/data-analysis@8663d69a9a9
+RUN . /init.sh; pip install --upgrade git+https://github.com/volodymyrss/data-analysis@31403a5
 RUN . /init.sh; pip install -U numpy
 
 RUN yum install -y bind-utils
